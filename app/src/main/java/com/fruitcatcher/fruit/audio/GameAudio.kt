@@ -1,4 +1,4 @@
-package com.fruitcatcher.game.audio
+package com.fruitcatcher.fruit.audio
 
 import android.content.Context
 import android.media.AudioAttributes
@@ -6,7 +6,7 @@ import android.media.AudioFocusRequest
 import android.media.AudioManager
 import android.media.MediaPlayer
 import android.media.SoundPool
-import com.fruitcatcher.game.R
+import com.fruitcatcher.fruit.R
 
 internal enum class Cue(val resource: Int) {
     TAP(R.raw.button_tap), START(R.raw.start_game), FRUIT(R.raw.catch_fruit), GOLD(R.raw.catch_gold),

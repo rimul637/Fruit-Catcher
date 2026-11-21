@@ -1,4 +1,4 @@
-package com.fruitcatcher.game.ui
+package com.fruitcatcher.fruit.ui
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.Animatable
@@ -45,11 +45,11 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.viewinterop.AndroidView
-import com.fruitcatcher.game.MainActivity
-import com.fruitcatcher.game.Screen
-import com.fruitcatcher.game.game.GameRenderer
-import com.fruitcatcher.game.game.Scene
-import com.fruitcatcher.game.game.SceneArt
+import com.fruitcatcher.fruit.MainActivity
+import com.fruitcatcher.fruit.Screen
+import com.fruitcatcher.fruit.game.GameRenderer
+import com.fruitcatcher.fruit.game.Scene
+import com.fruitcatcher.fruit.game.SceneArt
 
 private val Cream = Color(0xfffff4ce)
 private val Gold = Color(0xffffcf6c)

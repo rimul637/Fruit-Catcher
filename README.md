@@ -4,7 +4,7 @@ Fruit Catcher is a native offline Android orchard arcade game. Drag the basket a
 
 | Release configuration | Value |
 | --- | --- |
-| Application ID | `com.fruitcatcher.game` |
+| Application ID | `com.fruitcatcher.fruit` |
 | Version | `1.0.0` (1) |
 | Minimum SDK | 26 |
 | Compile and target SDK | 36 |

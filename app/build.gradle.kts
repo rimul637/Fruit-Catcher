@@ -5,10 +5,10 @@ plugins {
 }
 val keyFile = providers.environmentVariable("FRUIT_CATCHER_KEYSTORE")
 android {
-    namespace = "com.fruitcatcher.game"
+    namespace = "com.fruitcatcher.fruit"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.fruitcatcher.game"
+        applicationId = "com.fruitcatcher.fruit"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

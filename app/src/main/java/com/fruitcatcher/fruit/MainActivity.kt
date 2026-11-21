@@ -1,4 +1,4 @@
-package com.fruitcatcher.game
+package com.fruitcatcher.fruit
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,14 +9,14 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.lifecycleScope
-import com.fruitcatcher.game.audio.Cue
-import com.fruitcatcher.game.audio.GameAudio
-import com.fruitcatcher.game.data.GamePreferences
-import com.fruitcatcher.game.data.Preferences
-import com.fruitcatcher.game.game.Drop
-import com.fruitcatcher.game.game.GameEngine
-import com.fruitcatcher.game.game.SceneArt
-import com.fruitcatcher.game.ui.FruitCatcher
+import com.fruitcatcher.fruit.audio.Cue
+import com.fruitcatcher.fruit.audio.GameAudio
+import com.fruitcatcher.fruit.data.GamePreferences
+import com.fruitcatcher.fruit.data.Preferences
+import com.fruitcatcher.fruit.game.Drop
+import com.fruitcatcher.fruit.game.GameEngine
+import com.fruitcatcher.fruit.game.SceneArt
+import com.fruitcatcher.fruit.ui.FruitCatcher
 import java.io.IOException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

@@ -1,4 +1,4 @@
-package com.fruitcatcher.game.game
+package com.fruitcatcher.fruit.game
 
 import kotlin.random.Random
 import org.junit.Assert.*

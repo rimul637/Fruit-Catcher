@@ -1,4 +1,4 @@
-package com.fruitcatcher.game.game
+package com.fruitcatcher.fruit.game
 
 import kotlin.math.abs
 import kotlin.math.cos

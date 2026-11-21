@@ -1,4 +1,4 @@
-package com.fruitcatcher.game.data
+package com.fruitcatcher.fruit.data
 
 import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey

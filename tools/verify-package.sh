@@ -41,7 +41,7 @@ import zipfile
 root, apk, aab = (pathlib.Path(value) for value in sys.argv[1:])
 badging = (root / "badging").read_text()
 apk_manifest = (root / "apk-manifest").read_text()
-assert "package: name='com.fruitcatcher.game' versionCode='1' versionName='1.0.0'" in badging
+assert "package: name='com.fruitcatcher.fruit' versionCode='1' versionName='1.0.0'" in badging
 assert "sdkVersion:'26'" in badging
 assert "targetSdkVersion:'36'" in badging
 assert "application-label:'Fruit Catcher'" in badging
@@ -51,7 +51,7 @@ assert not re.search(r"E: (uses-permission|permission)", apk_manifest)
 
 ns = "{http://schemas.android.com/apk/res/android}"
 manifest = ET.parse(root / "aab-manifest").getroot()
-assert manifest.attrib["package"] == "com.fruitcatcher.game"
+assert manifest.attrib["package"] == "com.fruitcatcher.fruit"
 assert manifest.attrib[ns + "versionCode"] == "1" and manifest.attrib[ns + "versionName"] == "1.0.0"
 assert manifest.find("uses-sdk").attrib[ns + "targetSdkVersion"] == "36"
 assert manifest.find("uses-sdk").attrib[ns + "minSdkVersion"] == "26"
@@ -62,7 +62,7 @@ assert not any(node.tag.startswith("uses-permission") or node.tag == "permission
 app = manifest.find("application")
 assert app.attrib[ns + "icon"]
 assert app.attrib[ns + "allowBackup"] == "false"
-assert app.find("activity").attrib[ns + "screenOrientation"] == "portrait"
+assert app.find("activity").attrib[ns + "screenOrientation"] in {"portrait", "1"}
 
 for artifact in (apk, aab):
     with zipfile.ZipFile(artifact) as archive:

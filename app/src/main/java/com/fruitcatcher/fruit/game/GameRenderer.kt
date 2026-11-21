@@ -1,4 +1,4 @@
-package com.fruitcatcher.game.game
+package com.fruitcatcher.fruit.game
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -14,7 +14,7 @@ import android.graphics.Shader
 import android.graphics.Typeface
 import android.view.MotionEvent
 import android.view.View
-import com.fruitcatcher.game.R
+import com.fruitcatcher.fruit.R
 import kotlin.math.cos
 import kotlin.math.min
 import kotlin.math.sin
